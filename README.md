@@ -1,4 +1,3 @@
-# WinHttp-TLS
 ## TLS Activation Tools (Winhttp)
 Enable TLS 1.1/1.2 Security Protocols and set them as default for WinHTTP
 
