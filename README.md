@@ -1,5 +1,5 @@
 ## TLS Activation Tools (Winhttp)
-Enable TLS 1.1/1.2 Security Protocols as default for WinHTTP in older Windows Systems (Win 7, 8 ...)
+Enable TLS 1.1/1.2 Security Protocols as default for WinHTTP in older Windows Systems (Windows 7, 8 ...)
 
 
 ### Usage: 
