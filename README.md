@@ -1,6 +1,7 @@
 ## TLS Activation Tools (Winhttp)
 Enable TLS 1.1/1.2 Security Protocols as default for WinHTTP in older Windows Systems (Windows 7, 8 ...)
 
+ - [Latest Release](https://github.com/mmaysami/Winhttp-TLS/releases/latest)
 
 ### Usage: 
  - Powershell Script: Run the scripts from the script misc directory, for example:
