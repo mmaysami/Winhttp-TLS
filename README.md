@@ -46,7 +46,7 @@ This script creates registry keys to enable TLS 1.1, 1.2 in Windows 7
 
  - Restart your workstation for the changes to take effect.
 
-#### REFERENCES: 
+### REFERENCES: 
  - [Microsoft TLS Article](https://support.microsoft.com/en-us/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-default-secure-protocols-in-wi)
  - [Microsoft Windows Versions](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/operating-system-version)
  - [CPanel TLS Article](https://documentation.cpanel.net/display/CKB/How+to+Configure+Microsoft+Windows+7+to+use+TLS+Version+1.2)
