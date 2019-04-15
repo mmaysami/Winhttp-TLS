@@ -2,11 +2,21 @@
 Enable TLS 1.1/1.2 Security Protocols as default for WinHTTP in older Windows Systems (Win 7, 8 ...)
 
 
-### STEP1 : 
+### Usage: 
+ - Powershell Script: Run the scripts from the script misc directory, for example:
+   - ``` Set-ExecutionPolicy Bypass -Scope Process ; & ".\Demo-TLS Upgrade Tool.ps1" ```
+ - Executable: Run the build script from the main directory, for example:
+   - ``` ".\BuildTools.ps1" ```
+   - Run *.EXE from ToolsEXE folders
+
+ - Restart your workstation for the changes to take effect.
+
+
+### Step 1 : 
 This script downloads and installs the [KB3140245 Windows update](http://www.catalog.update.microsoft.com/search.aspx?q=kb3140245)
  
  
-### STEP2 : 
+### Step 2 : 
 This script creates registry keys to enable TLS 1.1, 1.2 in Windows 7
 
 
@@ -44,17 +54,7 @@ Microsoft Easy-Fix DOES create these keys, but this script does NOT.
 ```
 
 
-### USAGE: 
- - Powershell Script: Run the scripts from the script misc directory, for example:
-   - ``` Set-ExecutionPolicy Bypass -Scope Process ; & ".\Demo-TLS Upgrade Tool.ps1" ```
- - Executable: Run the build script from the main directory, for example:
-   - ``` ".\BuildTools.ps1" ```
-   - Run *.EXE from ToolsEXE folders
-
- - Restart your workstation for the changes to take effect.
-
-
-### REFERENCES: 
+### References: 
  - [Microsoft TLS Article](https://support.microsoft.com/en-us/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-default-secure-protocols-in-wi)
  - [Microsoft Windows Versions](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/operating-system-version)
  - [CPanel TLS Article](https://documentation.cpanel.net/display/CKB/How+to+Configure+Microsoft+Windows+7+to+use+TLS+Version+1.2)
