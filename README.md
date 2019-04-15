@@ -10,7 +10,8 @@ This script downloads and installs the [KB3140245 Windows update](http://www.cat
 This script creates registry keys to enable TLS 1.1, 1.2 in Windows 7
 
 
-##### WinHTTP Registry Entries: Microsoft Easy-Fix DOES create these keys as well
+##### WinHTTP Registry Entries: 
+Microsoft Easy-Fix DOES create these keys as well
 ```
 - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp
   DWORD DefaultSecureProtocols=0x00000A00	(32-bits and 64-bits)
@@ -19,7 +20,8 @@ This script creates registry keys to enable TLS 1.1, 1.2 in Windows 7
   DWORD DefaultSecureProtocols=0x00000A00	(64-bits)
 ```
 
-##### SChannel Registry Entries: Microsoft Easy-Fix does NOT create these keys since these protocols are disabled by default.
+##### SChannel Registry Entries: 
+Microsoft Easy-Fix does NOT create these keys since these protocols are disabled by default.
 ```
 - HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Client 
   DWORD DisabledByDefault=0x00000000
@@ -31,7 +33,8 @@ This script creates registry keys to enable TLS 1.1, 1.2 in Windows 7
  > CPanel Articles:     DWORD DisabledByDefault (on 32-bit Windows), QWORD DisabledByDefault (on 64-bit Windows)
 
 
-##### Internet Setting Registry Entries: Microsoft Easy-Fix DOES create these keys, but this script does NOT.
+##### Internet Setting Registry Entries: 
+Microsoft Easy-Fix DOES create these keys, but this script does NOT.
 ```
 - HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings:	
   DOWRD SecureProtocols = 0xA80
