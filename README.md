@@ -3,6 +3,16 @@ Enable TLS 1.1/1.2 Security Protocols as default for WinHTTP in older Windows Sy
 
  - [Latest Release](https://github.com/mmaysami/Winhttp-TLS/releases/latest)
 
+Applications and services that are written by using WinHTTP for 
+Secure Sockets Layer (SSL) connections can't use TLS 1.1 / 1.2 protocols. 
+This is because the definition of WinHTTP library doesn't include these 
+newer protocols.
+
+This update adds support for DefaultSecureProtocols registry entry that 
+allows certain applications that were built to use the WinHTTP default 
+flag to be able to leverage the newer TLS 1.2 or TLS 1.1 protocols 
+natively without any need for updates to the application.
+
 ### Usage: 
  - Powershell Script: Run the scripts from the script misc directory, for example:
    - ``` Set-ExecutionPolicy Bypass -Scope Process ; & ".\TLS Upgrade Tool.ps1" ```
