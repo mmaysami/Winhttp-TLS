@@ -15,7 +15,7 @@ natively without any need for updates to the application.
 
 ### Usage: 
  - Powershell Script: Run the scripts from the script misc directory, for example:
-   - ``` Set-ExecutionPolicy Bypass -Scope Process ; & ".\TLS Upgrade Tool.ps1" ```
+   - ``` Set-ExecutionPolicy Bypass -Scope Process ; & ".\Windows TLS Upgrade Tool.ps1" ```
  - Executable: Run the build script from the main directory, for example:
    - ``` ".\BuildTools.ps1" ```
    - Run *.EXE from ToolsEXE folders
