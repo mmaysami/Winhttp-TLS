@@ -5,7 +5,7 @@ Enable TLS 1.1/1.2 Security Protocols as default for WinHTTP in older Windows Sy
 
 ### Usage: 
  - Powershell Script: Run the scripts from the script misc directory, for example:
-   - ``` Set-ExecutionPolicy Bypass -Scope Process ; & ".\Demo-TLS Upgrade Tool.ps1" ```
+   - ``` Set-ExecutionPolicy Bypass -Scope Process ; & ".\TLS Upgrade Tool.ps1" ```
  - Executable: Run the build script from the main directory, for example:
    - ``` ".\BuildTools.ps1" ```
    - Run *.EXE from ToolsEXE folders
