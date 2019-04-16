@@ -1,8 +1,24 @@
 #==========================================================
 # 	Upgrade to TLS 1.1, 1.2 Default SecureProtocols
-#
+#		for WinHTTP
 #===========================================================
 # AUTHOR: Moe Maysami
+#
+# Applications and services that are written by using WinHTTP for 
+# Secure Sockets Layer (SSL) connections can't use TLS 1.1 / 1.2 protocols. 
+# This is because the definition of WinHTTP library doesn't include these 
+# newer protocols.
+#
+# This update adds support for DefaultSecureProtocols registry entry that 
+# allows certain applications that were built to use the WinHTTP default 
+# flag to be able to leverage the newer TLS 1.2 or TLS 1.1 protocols 
+# natively without any need for updates to the application.
+#
+# USAGE: Run the scripts from the directory in which you saved the files, for example:
+# 	- Set-ExecutionPolicy Bypass -Scope Process ; & ".\Demo-TLS Upgrade Tool.ps1"
+#	- Restart your workstation for the changes to take effect.
+#
+# WORKFLOW
 #
 # STEP1 : This script downloads and installs the KB3140245 Windows update.
 #
@@ -23,11 +39,6 @@
 #	Internet Setting Registry Entries: Microsoft Easy-Fix DOES create these keys, but this script does NOT.
 #	- HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings:	DOWRD SecureProtocols = 0xA80
 #	- HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings:	DOWRD SecureProtocols = 0xA80
-#
-#
-# USAGE/SYNTAX: Run the scripts from the directory in which you saved the files, for example:
-# 	- Set-ExecutionPolicy Bypass -Scope Process ; & ".\Demo-TLS Upgrade Tool.ps1"
-#	- Restart your workstation for the changes to take effect.
 #
 #
 # REFERENCES: 
